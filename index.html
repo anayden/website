@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alexey Naiden — Staff Engineer, 20+ years in software. Apple, Amazon, startups. Available for consulting and employment.">
+  <title>Alexey Naiden — Staff Engineer</title>
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --text-secondary: #555;
+      --link: #0066cc;
+      --link-hover: #004499;
+      --bg: #fff;
+      --border: #ddd;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #e8e8e8;
+        --text-secondary: #aaa;
+        --link: #6db3f2;
+        --link-hover: #9dcbf7;
+        --bg: #111;
+        --border: #333;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 18px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+      padding: 3rem 1.5rem;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    h1 { font-size: 1.8rem; font-weight: 600; margin-bottom: 0.3rem; }
+    .tagline { color: var(--text-secondary); margin-bottom: 1.5rem; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { color: var(--link-hover); text-decoration: underline; }
+    .contact { margin-bottom: 2rem; }
+    .contact a { margin-right: 1rem; }
+    .section { margin-bottom: 2rem; }
+    .section-title { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 0.8rem; }
+    .available { display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 0.2rem 0.6rem; border-radius: 3px; font-size: 0.85rem; margin-bottom: 1.5rem; }
+    @media (prefers-color-scheme: dark) { .available { background: #1b3d1f; color: #81c784; } }
+    .experience-item { margin-bottom: 1rem; }
+    .company { font-weight: 500; }
+    .role { color: var(--text-secondary); }
+    .skills { color: var(--text-secondary); font-size: 0.95rem; }
+    .highlight { margin-bottom: 1.5rem; }
+    .highlight-title { font-weight: 500; }
+    .highlight-desc { color: var(--text-secondary); font-size: 0.95rem; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+    footer { color: var(--text-secondary); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alexey Naiden</h1>
+    <p class="tagline">Staff Engineer · 20 years in software</p>
+    <p class="available">✓ Open to opportunities</p>
+  </header>
+
+  <div class="contact">
+    <a href="mailto:alexey.nayden@gmail.com">Email</a>
+    <a href="https://github.com/anayden">GitHub</a>
+    <a href="https://www.linkedin.com/in/alexeynaiden">LinkedIn</a>
+    <a href="tel:+995551001758">Phone</a>
+  </div>
+
+  <section class="section">
+    <p>I build and lead backend systems at scale. I've designed protocols handling 200k+ messages/second at Apple, led platform teams, and coordinated cross-team projects across 8+ engineering teams. I work in Python, Java, TypeScript, and whatever gets the job done.</p>
+  </section>
+
+  <section class="section">
+    <div class="section-title">Selected Work</div>
+    <div class="highlight">
+      <p class="highlight-title">FaceTime Protocol Redesign, Apple</p>
+      <p class="highlight-desc">Reduced call connection time from 12s to 1.5s. Co-authored the patent.</p>
+    </div>
+    <div class="highlight">
+      <p class="highlight-title">iMessage & Push Infrastructure, Apple</p>
+      <p class="highlight-desc">High-performance messaging systems, 200k+ msg/sec at peak.</p>
+    </div>
+    <div class="highlight">
+      <p class="highlight-title">Subscription Platform, Flo Health</p>
+      <p class="highlight-desc">Multi-platform catalog integrating App Store, Google Play. Enabled flexible pricing.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title">Experience</div>
+    <div class="experience-item">
+      <span class="company">CloudLinux</span> <span class="role">· Staff Engineer · 2025–now</span>
+    </div>
+    <div class="experience-item">
+      <span class="company">Flo Health</span> <span class="role">· Lead Software Engineer · 2023–2025</span>
+    </div>
+    <div class="experience-item">
+      <span class="company">Apple</span> <span class="role">· Senior Engineer (iMessage, Security) · 2017–2018</span>
+    </div>
+    <div class="experience-item">
+      <span class="company">Amazon</span> <span class="role">· SDE II · 2013–2014</span>
+    </div>
+    <div class="experience-item">
+      <span class="company">+ Neu.ro, Loona, MoneyHash</span> <span class="role">· Various roles · 2019–2023</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title">Education</div>
+    <p>MSc Computer Science — St. Petersburg State University</p>
+    <p style="color: var(--text-secondary);">Cybersecurity — Stanford (Professional Development)</p>
+  </section>
+
+  <section class="section">
+    <div class="section-title">Skills</div>
+    <p class="skills">Python · asyncio · PostgreSQL · AWS/GCP/Azure · Kubernetes · Docker · LLM · Java · TypeScript</p>
+  </section>
+
+  <hr>
+
+  <footer>
+    <p>Based in Georgia · <a href="Alexey_Naiden_CV.pdf">Download CV</a></p>
+  </footer>
+</body>
+</html>
