@@ -1,0 +1,40 @@
+name: Build CV PDF
+
+# Fires only when the Typst source changes — never when this workflow
+# pushes the compiled PDF, so there is no rebuild loop.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "Alexey_Naiden_CV.typ"
+      - ".github/workflows/build-cv.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Typst
+        uses: typst-community/setup-typst@v4
+        with:
+          typst-version: "0.15.0"
+
+      - name: Compile CV
+        run: typst compile Alexey_Naiden_CV.typ Alexey_Naiden_CV.pdf
+
+      - name: Commit PDF if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- Alexey_Naiden_CV.pdf; then
+            echo "PDF unchanged — nothing to commit."
+            exit 0
+          fi
+          git add Alexey_Naiden_CV.pdf
+          git commit -m "ci: rebuild CV PDF from Typst source"
+          git push
