@@ -60,7 +60,13 @@
 // ── Work Experience ───────────────────────────────────────
 #section("Work Experience")
 
-#entry("Staff Engineer", "May 2025 — Present", org: "Cloud Linux Software")[
+#entry("Senior Backend Engineer", "May 2026 — Present", org: "Zerion")[
+  - Develop Go microservices that parse blockchains and serve portfolio and asset data through a REST API to major wallets and exchanges.
+  - Focus on DeFi infrastructure: transaction receipt parsing, cross-chain bridge swap detection, and protocol coverage.
+  - Improve performance and reliability of the data pipeline, with a focus on Solana.
+]
+
+#entry("Staff Engineer", "May 2025 — May 2026", org: "Cloud Linux Software")[
   - Coordinate cross-team technical projects involving 8 engineering teams, including creating architectures and facilitating protocol and API agreements.
   - Ensure the department scales horizontally (by adding new teams to existing stacks) and vertically (by increasing team throughput via automations).
   - Continuously improve processes from planning and retrospectives to CI/CD build times.
@@ -153,5 +159,5 @@
 // ── Skills ────────────────────────────────────────────────
 #section("Skills")
 
-- *Programming Languages*: Python, JavaScript/TypeScript, HTML/CSS, Java, Bash
-- *Technologies*: asyncio, PostgreSQL, AWS/GCP/Azure, LLM, UNIX, Docker/Kubernetes
+- *Programming Languages*: Go, Python, JavaScript/TypeScript, HTML/CSS, Java, Bash
+- *Technologies*: Blockchain data (Solana), REST APIs, asyncio, PostgreSQL, AWS/GCP/Azure, LLM, UNIX, Docker/Kubernetes
