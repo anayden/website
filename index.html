@@ -43,8 +43,6 @@
     .contact a { margin-right: 1rem; }
     .section { margin-bottom: 2rem; }
     .section-title { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 0.8rem; }
-    .available { display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 0.2rem 0.6rem; border-radius: 3px; font-size: 0.85rem; margin-bottom: 1.5rem; }
-    @media (prefers-color-scheme: dark) { .available { background: #1b3d1f; color: #81c784; } }
     .experience-item { margin-bottom: 1rem; }
     .company { font-weight: 500; }
     .role { color: var(--text-secondary); }
@@ -59,8 +57,7 @@
 <body>
   <header>
     <h1>Alexey Naiden</h1>
-    <p class="tagline">Staff Engineer · 20 years in software</p>
-    <p class="available">✓ Open to opportunities</p>
+    <p class="tagline">Senior Backend Engineer · Go · 20 years in software</p>
   </header>
 
   <div class="contact">
@@ -71,11 +68,15 @@
   </div>
 
   <section class="section">
-    <p>I build and lead backend systems at scale. I've designed protocols handling 200k+ messages/second at Apple, led platform teams, and coordinated cross-team projects across 8+ engineering teams. I work in Python, Java, TypeScript, and whatever gets the job done.</p>
+    <p>I build and lead backend systems at scale. Today I write Go services at Zerion that index blockchains and serve portfolio data to major wallets and exchanges. Before that, I've designed protocols handling 200k+ messages/second at Apple, led platform teams, and coordinated cross-team projects across 8+ engineering teams. I work in Go, Python, Java, TypeScript, and whatever gets the job done.</p>
   </section>
 
   <section class="section">
     <div class="section-title">Selected Work</div>
+    <div class="highlight">
+      <p class="highlight-title">DeFi Data Infrastructure, Zerion</p>
+      <p class="highlight-desc">Go microservices parsing blockchains (Solana focus) for wallet and exchange APIs. Cross-chain bridge swap detection, performance and reliability.</p>
+    </div>
     <div class="highlight">
       <p class="highlight-title">FaceTime Protocol Redesign, Apple</p>
       <p class="highlight-desc">Reduced call connection time from 12s to 1.5s. Co-authored the patent.</p>
@@ -93,7 +94,10 @@
   <section class="section">
     <div class="section-title">Experience</div>
     <div class="experience-item">
-      <span class="company">CloudLinux</span> <span class="role">· Staff Engineer · 2025–now</span>
+      <span class="company">Zerion</span> <span class="role">· Senior Backend Engineer · 2026–now</span>
+    </div>
+    <div class="experience-item">
+      <span class="company">CloudLinux</span> <span class="role">· Staff Engineer · 2025–2026</span>
     </div>
     <div class="experience-item">
       <span class="company">Flo Health</span> <span class="role">· Lead Software Engineer · 2023–2025</span>
@@ -117,7 +121,7 @@
 
   <section class="section">
     <div class="section-title">Skills</div>
-    <p class="skills">Python · asyncio · PostgreSQL · AWS/GCP/Azure · Kubernetes · Docker · LLM · Java · TypeScript</p>
+    <p class="skills">Go · Python · Solana · asyncio · PostgreSQL · AWS/GCP/Azure · Kubernetes · Docker · LLM · Java · TypeScript</p>
   </section>
 
   <hr>
